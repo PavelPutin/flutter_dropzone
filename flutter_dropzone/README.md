@@ -14,7 +14,7 @@ DropzoneView(
   onLoaded: () => print('Zone loaded'),
   onError: (String? ev) => print('Error: $ev'),
   onHover: () => print('Zone hovered'),
-  onDropFile: (DropzoneFileInterface file) => print('Drop: ${file.webFile}'),
+  onDropFile: (DropzoneFileInterface file) => print('Drop: ${file.getNative()}'),
   onDropString: (String s) => print('Drop: $s'),
   onDropFiles: (List<DropzoneFileInterface> files) => print('Drop multiple: $files'),
   onDropStrings: (List<String> strings) => print('Drop multiple: $strings'),
